@@ -13,7 +13,7 @@ API RESTful de gestion d'articles pour blog, développée dans le cadre du cours
 
 ```bash
 # Cloner le dépôt
-git clone <otre-url-github>
+git clone <http://github.com/juniornde-stack/blog-api-inf122>
 cd blog-api
 
 # Installer les dépendances
