@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog API - INF222</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation simple -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">Blog<span class="logo-light">API</span></span>
+            <div class="nav-links">
+                <a href="#articles">Articles</a>
+                <a href="#create">Nouveau</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <!-- Section de présentation courte -->
+        <section class="hero">
+            <h1>Gestion d'articles</h1>
+            <p>API RESTful de blog développée dans le cadre du cours INF222 - Programmation Web</p>
+        </section>
+   
+        
+<!-- Section À propos - Version enrichie -->
+<section class="card about-card">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>📌 À propos de l'auteur</h2>
+            <p>
+                Étudiant en <strong>2ème année informatique</strong>, je développe une passion croissante pour 
+                l'architecture des applications web modernes. Ce projet d'API blog est une étape clé dans mon 
+                parcours d'apprentissage.
+            </p>
+            <p>
+                Mes centres d'intérêt couvrent plusieurs domaines complémentaires :
+            </p>
+            <ul class="about-list">
+                <li><strong>🔧 Backend & API</strong> : Conception d'APIs RESTful robustes et documentées</li>
+                <li><strong>🔒 Cybersécurité</strong> : Formation active sur <strong>TryHackMe</strong> (apprentissage des vulnérabilités web)</li>
+                <li><strong>☁️ SaaS & Architecture</strong> : Comprendre comment construire des applications scalables</li>
+                <li><strong>📚 Apprentissage structuré</strong> : Utilisation de <strong>CleeRoute</strong> pour organiser ma progression</li>
+            </ul>
+            <p class="about-quote">
+                « Construire des bases solides pour mieux innover. »
+            </p>
+        </div>
+        <div class="about-badge">
+            <span>INF222</span>
+            <span>API REST</span>
+            <span>Node.js</span>
+        </div>
+    </div>
+</section>
+      
+
+        <!-- Section création d'article - placée en haut pour plus de visibilité -->
+        <section id="create" class="card">
+            <h2>✏️ Créer un article</h2>
+            <form id="articleForm">
+                <div class="form-row">
+                    <input type="text" id="title" placeholder="Titre" required>
+                    <input type="text" id="author" placeholder="Auteur" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="category" placeholder="Catégorie (optionnel)">
+                    <input type="text" id="tags" placeholder="Tags (optionnel)">
+                </div>
+                <textarea id="content" placeholder="Contenu de l'article..." rows="6" required></textarea>
+                <button type="submit" class="btn-submit">Publier l'article</button>
+            </form>
+        </section>
+
+        <!-- Section recherche -->
+        <section class="card">
+            <h2>🔍 Rechercher</h2>
+            <div class="search-bar">
+                <input type="text" id="searchQuery" placeholder="Titre ou contenu...">
+                <button id="searchBtn" class="btn-secondary">Rechercher</button>
+                <button id="resetSearchBtn" class="btn-outline">Afficher tous</button>
+            </div>
+        </section>
+
+        <!-- Section liste des articles -->
+        <section id="articles" class="card">
+            <h2>📄 Articles récents</h2>
+            <div id="articlesList" class="articles-list"></div>
+        </section>
+    </main>
+
+    <!-- Footer avec mention de CleeRoute -->
+    <footer class="footer">
+        <p>Projet INF222 - API Blog | Parcours structuré avec <a href="https://www.cleeroute.com/fr" target="_blank">CleeRoute</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
